@@ -10,17 +10,11 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("game02package")
 public class app03gamingBasicjava {
 
-    @Bean
-    public GameRunner gameRunner(gamingconsole game)
-    {
-        var gamerunner=new GameRunner(game) ;
-        return gamerunner;
-    }
     public static void main(String[] args) {
     var context=    new   AnnotationConfigApplicationContext(app03gamingBasicjava.class);
     System.out.println(    context.getBean(gamingconsole.class));
-        context.getBean(gamingconsole.class).down();//
-        context.getBean(GameRunner.class).run();//
+        context.getBean(gamingconsole.class).down();
+        context.getBean(GameRunner.class).run();
 
 
     }

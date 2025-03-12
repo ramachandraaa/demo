@@ -1,4 +1,4 @@
-package game02package;
+package game03.game02package;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
